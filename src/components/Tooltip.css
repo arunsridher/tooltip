@@ -1,0 +1,19 @@
+/* tooltip position */
+.tooltip {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+/* tooltip text */
+.tooltip-text {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  background-color: #000;
+  border-radius: 4px;
+  width: 175px;
+  height: 50px;
+  font-size: 2 rem;
+  box-sizing: border-box;
+}
