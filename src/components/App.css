@@ -17,3 +17,19 @@
   border-radius: 2px;
   font-size: 2rem;
 }
+
+#position-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#position-container label {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+#position {
+  width: 150px;
+  height: 35px;
+}

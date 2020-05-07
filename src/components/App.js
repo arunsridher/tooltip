@@ -11,6 +11,7 @@ class App extends Component {
     this.state = {
       show: false,
       rect: null,
+      position: "top",
     };
   }
 
@@ -32,13 +33,30 @@ class App extends Component {
     }
   };
 
+  updatePosition = () => {
+    this.setState({ position: document.getElementById("position").value });
+  };
+
   render() {
     return (
       <div>
         <div id="header">ToolTip</div>
+        <div id="position-container">
+          <label htmlFor="position">Position </label>
+          <select
+            id="position"
+            defaultValue="this.state.position"
+            onChange={this.updatePosition}
+          >
+            <option value="top">top</option>
+            <option value="right">right</option>
+            <option value="bottom">bottom</option>
+            <option value="left">left</option>
+          </select>
+        </div>
         {/* show tooltip on mouse hover */}
         {this.state.show ? (
-          <ToolTip position={POSITION[0]} rect={this.state.rect} />
+          <ToolTip position={this.state.position} rect={this.state.rect} />
         ) : null}
         <Button
           id="btn"
