@@ -3,6 +3,8 @@ import "./App.css";
 import Button from "./Button";
 import ToolTip from "./ToolTip";
 
+const POSITION = ["top", "left", "right", "bottom"];
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -36,7 +38,7 @@ class App extends Component {
         <div id="header">ToolTip</div>
         {/* show tooltip on mouse hover */}
         {this.state.show ? (
-          <ToolTip position="left" rect={this.state.rect} />
+          <ToolTip position={POSITION[0]} rect={this.state.rect} />
         ) : null}
         <Button
           id="btn"

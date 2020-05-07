@@ -1,3 +1,7 @@
+This project shows a tooltip when we hover on the button.
+
+tooltip positions => 'top', 'left', 'right', 'bottom'
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
